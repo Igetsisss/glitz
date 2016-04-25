@@ -1,19 +1,33 @@
 header {
-  background-color: red;
+  background-color: $color-black-2;
   position: fixed;
   top: 0;
   left: 0;
   right:0;
+  height: 4.5 * $grid-unit;
 
-  a {
-    color: white;
+  z-index: 100000;
+
+  .page-link {
+    color: $color-white;
     display: inline-block;
-    padding: 20px;
     text-decoration: none;
-  }
+    font-size: $base-text;
+    letter-spacing: 1px;
+    font-weight: $base-title-font-weight;
+    padding: 0 2 * $grid-unit;
 
-  a:hover {
-    background-color: darkslategrey;
+    padding-top: 2 * $grid-unit;
+
+    &:hover {
+      background-color: $color-black-2;
+    }
+
+    &.is-selected .page-link-word {
+
+      padding-bottom: $grid-unit;
+      border-bottom: 6px solid $color-white;
+    }
   }
 
   nav {

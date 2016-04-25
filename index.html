@@ -3,12 +3,54 @@ layout: default-layout
 title: Home
 ---
 
+<div class="packages-title">To Do</div>
+
 <div class="package-container">
-{% for package in site.data.playbook %}
+{% for todo in site.data.todo %}
   <div class="package">
-    <h1> {{ package.name }} </h1>
-    <p> {{ package.summary }} </p>
-    <p> {{ package.stars }} </p>
+    <div class="package-info">
+      <div class="package-name"> {{ todo.name }} </div>
+
+      <div class="package-status">
+        {% if todo.complete %}
+          <div class="package-complete"> COMPLETE </div>
+        {% else %}
+          <div class="package-days-left"> {{ todo.days_left }} </div>
+        {% endif %}
+        <div class="package-due-date"> {{ todo.due_date }} </div>
+      </div>
+    </div>
+    <div class="package-details">
+      <div class="package-details-name"> {{ todo.name }} </div>
+      <div class="package-details-updated"> {{ todo.updated }} </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+<div class="packages-filter">Playbook Learning</div>
+
+<div class="package-container">
+{% for play in site.data.playbook %}
+  <div class="package {% if play.locked %} is-locked {% endif %}">
+    <div class="package-info">
+      <div class="package-name"> {{ play.name }} </div>
+      <div class="package-summary"> {{ play.summary }} </div>
+      {% if play.locked %}
+        <div class="package-cta"> locked </div>
+      {% elsif play.completion == 0 %}
+        <div class="package-cta"> begin </div>
+      {% endif %}
+    </div>
+
+    {% if play.completion != 0 %}
+      <div class="package-completion package-completion-{{play.completion}}"></div>
+    {% endif %}
+
+    <div class="package-details">
+      <div class="package-details-name"> {{ play.name }} </div>
+      <div class="package-details-updated"> {{ play.updated }} </div>
+    </div>
   </div>
 {% endfor %}
 </div>

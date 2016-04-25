@@ -1,0 +1,9 @@
+- name: New Plays 2016
+  complete: false
+  days_left: Two days left
+  due_date: By Tuesday (11/12) at 10pm
+
+- name: Installing on Monday 8/19
+  complete: true
+  days_left: Two days left
+  due_date: By Tuesday (11/12) at 10pm

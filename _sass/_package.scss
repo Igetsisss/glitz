@@ -1,9 +1,194 @@
 
+.packages-title {
+  padding: $grid-unit;
+  color: $color-gray-4;
+}
 
-.package {
-  background-color: white;
-  padding: 40px;
-  margin: 10px;
-  display: inline-block;
-  width: 300px;
+.packages-filter {
+  padding: $grid-unit * 2 $grid-unit;
+  background-color: $color-black-1;
+  margin: $grid-unit 0;
+  color: $color-gray-3;
+}
+
+.package-container {
+  padding-left: 0.25 * $grid-unit;
+
+  .package {
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+
+    width: 18 * $grid-unit;
+    height: 10 * $grid-unit;
+
+    margin: $grid-unit / 2;
+    padding: $grid-unit;
+
+
+
+    .package-completion {
+      width: 20 * $grid-unit;
+      height: $grid-unit;
+      background-color: $color-gray-1;
+      position: absolute;
+      margin-left: -1 * $grid-unit;
+      margin-top: 10 * $grid-unit;
+      z-index: 500;
+
+      &.package-completion-0 {
+        background: linear-gradient(to right, $color-bad 00%, $color-gray-1 00%);
+      }
+
+      &.package-completion-1 {
+        background: linear-gradient(to right, $color-bad 10%, $color-gray-1 10%);
+      }
+
+      &.package-completion-2 {
+        background: linear-gradient(to right, $color-bad 20%, $color-gray-1 20%);
+      }
+
+      &.package-completion-3 {
+        background: linear-gradient(to right, $color-bad 30%, $color-gray-1 30%);
+      }
+
+      &.package-completion-4 {
+        background: linear-gradient(to right, $color-bad 40%, $color-gray-1 40%);
+      }
+
+      &.package-completion-5 {
+        background: linear-gradient(to right, $color-bad 50%, $color-gray-1 50%);
+      }
+
+      &.package-completion-6 {
+        background: linear-gradient(to right, $color-bad 60%, $color-gray-1 60%);
+      }
+
+      &.package-completion-7 {
+        background: linear-gradient(to right, $color-bad 70%, $color-gray-1 70%);
+      }
+
+      &.package-completion-8 {
+        background: linear-gradient(to right, $color-bad 80%, $color-gray-1 80%);
+      }
+
+      &.package-completion-9 {
+        background: linear-gradient(to right, $color-bad 90%, $color-gray-1 90%);
+      }
+    }
+
+    .package-info {
+      position: absolute;
+      width: 18 * $grid-unit;
+      height: 10 * $grid-unit;
+
+      .package-name {
+        font-size: $base-title-big;
+        color: $color-black-1;
+        font-weight: $base-title-font-weight;
+      }
+
+      .package-summary {
+        color: $color-gray-3;
+        font-size: $base-text;
+      }
+
+      .package-complete, .package-days-left, .package-cta {
+        font-size: $base-text-small;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: $base-title-font-weight;
+      }
+
+      .package-complete, .package-cta {
+        color: $color-good;
+      }
+
+      .package-days-left {
+        color: $color-bad;
+      }
+
+      .package-due-date {
+        font-size: $base-text-small;
+        color: $color-gray-3;
+      }
+
+      .package-status, .package-cta {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
+    &.is-locked {
+      background-color: $color-gray-1;
+
+      .package-cta {
+        color: $color-gray-3;
+      }
+    }
+
+    .package-details {
+      display:none;
+    }
+
+    &:hover:not(.is-locked) {
+      margin-bottom: 19 * $grid-unit;
+      outline: 4px solid $color-white;
+
+      background-color: $color-bad;
+      color: white;
+
+
+      .package-summary, .package-due-date, .package-status, .package-cta, .package-name, .package-complete, .package-days-left {
+        color: $color-white;
+      }
+
+      .package-completion {
+        visibility: hidden;
+      }
+
+      .package-details {
+        position: absolute;
+        display: block;
+        height: 14 * $grid-unit;
+        left: 0;
+        right: 0;
+        margin-top: 11.5 * $grid-unit;
+
+        background-color: $color-black-1;
+
+        padding: 2 * $grid-unit 3 * $grid-unit;
+
+
+
+        .package-details-name {
+          font-size: $base-title-big;
+          color: $color-white;
+          font-weight: $base-title-font-weight;
+        }
+
+        .package-details-updated {
+          color: $color-gray-4;
+          text-transform: uppercase;
+          font-size: $base-text-small;
+          letter-spacing: 2px;
+        }
+      }
+
+      &::after {
+        content: ".";
+        color: rgba(0,0,0,0);
+        background-color: $color-bad;
+
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: -40px auto;
+        top: 12 * $grid-unit;
+        transform: rotate(45deg);
+        z-index: 499;
+      }
+    }
+  }
 }
