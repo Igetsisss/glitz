@@ -23,13 +23,13 @@
 
 - name: Counters/Trops
   summary: Run - These plays take advantage of an aggressive defensive front.
-  locked: true
+  locked: false
   completion: 0
   updated: Last updated 11/23
 
 - name: Quick Runs
   summary: A two back or one back 6-Man protection. The offensive line will block TURN protection. The remaining back will block the first man.
-  locked: true
+  locked: false
   completion: 0
   updated: Last updated 11/23
 

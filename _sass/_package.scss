@@ -159,6 +159,12 @@
 
         padding: 2 * $grid-unit 3 * $grid-unit;
 
+        .package-details-meta {
+          border-right: 1px solid $color-gray-4;
+          width: 19 * $grid-unit;
+          padding-right: $grid-unit;
+          height: 13 * $grid-unit;
+        }
 
 
         .package-details-name {
@@ -172,6 +178,23 @@
           text-transform: uppercase;
           font-size: $base-text-small;
           letter-spacing: 2px;
+        }
+
+        .package-details-button {
+          padding: $grid-unit;
+          background-color: $color-black-2;
+          border-radius: 5px;
+          top: 12 * $grid-unit;
+          width: 10 * $grid-unit;
+          color: $color-gray-2;
+          position: absolute;
+
+
+          &::after {
+            content: "〉";
+            float: right;
+            margin-right: -5px;
+          }
         }
       }
 

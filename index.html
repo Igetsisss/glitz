@@ -21,8 +21,11 @@ title: Home
       </div>
     </div>
     <div class="package-details">
-      <div class="package-details-name"> {{ todo.name }} </div>
-      <div class="package-details-updated"> {{ todo.updated }} </div>
+      <div class="package-details-meta">
+        <div class="package-details-name"> {{ todo.name }} </div>
+        <div class="package-details-updated"> {{ todo.updated }} </div>
+        <div class="package-details-button">Take Quiz</div>
+      </div>
     </div>
   </div>
 {% endfor %}
@@ -48,8 +51,11 @@ title: Home
     {% endif %}
 
     <div class="package-details">
-      <div class="package-details-name"> {{ play.name }} </div>
-      <div class="package-details-updated"> {{ play.updated }} </div>
+      <div class="package-details-meta">
+        <div class="package-details-name"> {{ play.name }} </div>
+        <div class="package-details-updated"> {{ play.updated }} </div>
+        <div class="package-details-button"> {% if play.completion == 0 %} Get Started {% else  %} Continue Learning {% endif %}</div>
+      </div>
     </div>
   </div>
 {% endfor %}
