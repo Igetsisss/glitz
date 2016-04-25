@@ -17,5 +17,27 @@
   <meta name = "viewport" content = "initial-scale = 1, user-scalable = no, width = device-width, height = device-height">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0.beta4/turbolinks.js"></script>
+  <script>
+
+  $(document).ready(function() {
+
+    $openPackage = {};
+
+    $(".package").on("tap click", function(event) {
+      $this = $(this)
+      if($this.hasClass("is-open")) {
+        $this.removeClass("is-open");
+        $openPackage = {};
+      } else {
+        $this.addClass("is-open");
+        if($openPackage.removeClass != undefined)
+          $openPackage.removeClass("is-open");
+        $openPackage = $this;
+      }
+    })
+  })
+
+  </script>
 </head>

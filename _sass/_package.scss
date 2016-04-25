@@ -131,7 +131,7 @@
       display:none;
     }
 
-    &:hover:not(.is-locked) {
+    &.is-open:not(.is-locked) {
       margin-bottom: 19 * $grid-unit;
       outline: 4px solid $color-white;
 
