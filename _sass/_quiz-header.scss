@@ -1,0 +1,39 @@
+.quiz-layout {
+  header {
+    background-color: $color-black-2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    height: 4.5 * $grid-unit;
+
+    z-index: 100000;
+
+    color: $color-white;
+
+    .back-button {
+      color: $color-white;
+      text-decoration: none;
+      font-size: $base-text-big;
+
+      padding-left: $grid-unit;
+
+      position: absolute;
+      bottom: $grid-unit;
+    }
+
+    .question-title {
+      position: absolute;
+      bottom: $grid-unit;
+      left: 0;
+      right: 0;
+
+      text-transform: uppercase;
+      font-weight: $base-title-font-weight;
+      font-size: $base-text;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+  }
+}

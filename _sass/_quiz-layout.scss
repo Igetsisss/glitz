@@ -1,0 +1,69 @@
+// This file should contain all of the formatting necessary for the default layout
+
+
+.quiz-layout {
+  background-color: $color-gray-2;
+
+  .page-content {
+    left: 1 * $grid-unit;
+    right: 1 * $grid-unit;
+    bottom: 1 * $grid-unit;
+    top: 6 * $grid-unit;
+    background-color: $color-white;
+    position: absolute;
+
+    text-align: center;
+
+
+
+
+    .question-title {
+      font-weight: $base-title-font-weight;
+      font-size: $base-title-small;
+      margin-top: 2 * $grid-unit;
+    }
+
+    .question-prompt {
+      margin-top: 1 * $grid-unit;
+      font-size: $base-text;
+    }
+
+    .question-image {
+      margin: auto;
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+      right: 0;
+
+      img {
+        display: inline-block;
+      }
+
+      .players-drawer {
+        position: absolute;
+        top: 0;
+        left: 2 * $grid-unit;
+        background-color: $color-gray-2;
+        width: 4 * $grid-unit;
+      }
+
+      .player {
+        background-color: $color-good;
+        border-radius: 1000000px;
+
+        font-weight: $base-title-font-weight;
+        color: $color-white;
+
+        width: 2 * $grid-unit;
+        height: 2 * $grid-unit;
+        margin: 1 * $grid-unit;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      }
+
+    }
+  }
+}
