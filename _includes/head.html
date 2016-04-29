@@ -22,25 +22,5 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
   <script src="  https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0.beta4/turbolinks.js"></script>
-  <script>
 
-  $(document).ready(function() {
-
-    $openPackage = {};
-
-    $(".package").on("click", function(event) {
-      $this = $(this)
-      if($this.hasClass("is-open")) {
-        $this.removeClass("is-open");
-        $openPackage = {};
-      } else {
-        $this.addClass("is-open");
-        if($openPackage.removeClass != undefined)
-          $openPackage.removeClass("is-open");
-        $openPackage = $this;
-      }
-    })
-  })
-
-  </script>
 </head>

@@ -24,7 +24,7 @@ title: Home
       <div class="package-details-meta">
         <div class="package-details-name"> {{ todo.name }} </div>
         <div class="package-details-updated"> {{ todo.updated }} </div>
-        <div class="package-details-button">Take Quiz</div>
+        <a href="{{site.baseurl}}/quiz/drag-drop.html" class="package-details-button"> Take Quiz </a>
       </div>
     </div>
   </div>
@@ -54,9 +54,31 @@ title: Home
       <div class="package-details-meta">
         <div class="package-details-name"> {{ play.name }} </div>
         <div class="package-details-updated"> {{ play.updated }} </div>
-        <div class="package-details-button"> {% if play.completion == 0 %} Get Started {% else  %} Continue Learning {% endif %}</div>
+        <a href="{{site.baseurl}}/quiz/drag-drop.html" class="package-details-button"> {% if play.completion == 0 %} Get Started {% else  %} Continue Learning {% endif %}</a>
       </div>
     </div>
   </div>
 {% endfor %}
 </div>
+
+<script>
+
+$(document).ready(function() {
+
+  $openPackage = {};
+
+  $(".package-info").on("click", function(event) {
+    $this = $(this).parent();
+    if($this.hasClass("is-open")) {
+      $this.removeClass("is-open");
+      $openPackage = {};
+    } else {
+      $this.addClass("is-open");
+      if($openPackage.removeClass != undefined)
+        $openPackage.removeClass("is-open");
+      $openPackage = $this;
+    }
+  })
+})
+
+</script>
