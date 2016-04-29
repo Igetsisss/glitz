@@ -41,10 +41,12 @@ canvas.addEventListener("touchstart", function(e) {
   ctx.fillStyle = "#2a3c43";
   lastX = touch.pageX - this.offsetLeft - extraOffsetX;
   lastY = touch.pageY - this.offsetTop - extraOffsetY;
+  e.preventDefault();
 })
 
 canvas.addEventListener("touchend", function(e){
   painting = false;
+  e.preventDefault();
 })
 
 canvas.addEventListener("touchmove", function(e) {
@@ -114,8 +116,8 @@ canvas.addEventListener("touchmove", function(e) {
 
     lastX = mouseX;
     lastY = mouseY;
-
   }
+  e.preventDefault();
 })
 
 </script>
