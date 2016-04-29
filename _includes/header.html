@@ -3,11 +3,10 @@
     <a class="site-title page-link" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
     <nav class="site-nav">
-      {% for my_page in site.pages %}
-        {% if my_page.title %}
-        <a class="page-link {% if page.url == my_page.url %}is-selected{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}"><span class="page-link-word">{{ my_page.title }}</span></a>
-        {% endif %}
-      {% endfor %}
+      {{page.url}}
+      <a class="page-link {% if '/' == page.url %}is-selected{% endif %}" href="{{site.baseurl}}/index.html"><span class="page-link-word">Home</span></a>
+      <a class="page-link {% if '/leaderboard.html' == page.url %}is-selected{% endif %}" href="{{site.baseurl}}/leaderboard.html"><span class="page-link-word">Leaderboard</span></a>
+      <a class="page-link {% if '/profile.html' == page.url %}is-selected{% endif %}" href="{{site.baseurl}}/profile.html"><span class="page-link-word">You</span></a>
     </nav>
 
 </header>

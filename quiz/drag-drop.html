@@ -17,9 +17,6 @@ title: Drag and Drop
 
   <div class="question-image">
     <img src="{{ site.baseurl }}/quiz/drag-drop.png">
-
-
-
     <div class="players-drawer">
       <div class="player">QB</div>
       <div class="player">X</div>
@@ -31,3 +28,11 @@ title: Drag and Drop
   </div>
 
 </div>
+
+
+<script>
+$(document).ready(function() {
+  $(".player").draggable();
+  console.log($(".player"))
+})
+</script>
