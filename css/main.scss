@@ -41,6 +41,9 @@ $color-good: #49b759;
 $color-bad: #ee4024;
 
 
+$site-baseurl: "{{site.baseurl}}";
+
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

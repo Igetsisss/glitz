@@ -124,6 +124,15 @@
 
       .package-cta {
         color: $color-gray-3;
+
+        &::before {
+          content:".";
+          color: transparent;
+          width: 12px;
+          height: 12px;
+          display: block;
+          background-image: url($site-baseurl + "/img/lock.svg");
+        }
       }
     }
 

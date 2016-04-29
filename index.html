@@ -40,7 +40,7 @@ title: Home
       <div class="package-name"> {{ play.name }} </div>
       <div class="package-summary"> {{ play.summary }} </div>
       {% if play.locked %}
-        <div class="package-cta"> locked </div>
+        <div class="package-cta"> </div>
       {% elsif play.completion == 0 %}
         <div class="package-cta"> begin </div>
       {% endif %}
