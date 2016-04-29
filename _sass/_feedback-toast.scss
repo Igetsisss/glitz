@@ -1,0 +1,67 @@
+.feedback-toast {
+  background-color: $color-black-1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: $color-white;
+  text-align: left;
+
+  padding: $grid-unit;
+  padding-bottom: 2 * $grid-unit;
+
+  .feedback-light {
+    width: 2 * $grid-unit;
+    height: 2 * $grid-unit;
+
+    border-radius: 10000px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    float: left;
+
+    margin-right: $grid-unit;
+
+
+    &.correct {
+      background-color: $color-good;
+      &:after {
+        content: "✓"
+      }
+    }
+    &.incorrect {
+      background-color: $color-bad;
+      &:after {
+        content: "!"
+      }
+    }
+  }
+
+  .feedback-title {
+    font-weight: $base-title-font-weight;
+    font-size: $base-title-small;
+    margin: $grid-unit 0;
+  }
+
+  .answer-next-button {
+    padding: $grid-unit/2 $grid-unit;
+    background-color: $color-black-2;
+    border-radius: 5px;
+    width: 6 * $grid-unit;
+    color: $color-gray-2;
+    position: absolute;
+
+    right: $grid-unit;
+    bottom: 2 * $grid-unit;
+
+    text-decoration: none;
+
+    &::after {
+      content: "〉";
+      float: right;
+      margin-right: -5px;
+    }
+  }
+}
