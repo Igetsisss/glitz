@@ -32,15 +32,15 @@ var canvas = document.getElementById("canvas"),
   extraOffsetY = 240;
   extraOffsetX = 20;
 
-canvas.width = 740;
-canvas.height = 513;
+canvas.width = 740 * 2;
+canvas.height = 513 * 2;
 
 canvas.addEventListener("touchstart", function(e) {
   touch = e.touches[0]
   painting = true;
   ctx.fillStyle = "#2a3c43";
-  lastX = touch.pageX - this.offsetLeft - extraOffsetX;
-  lastY = touch.pageY - this.offsetTop - extraOffsetY;
+  lastX = (touch.pageX - this.offsetLeft - extraOffsetX) * 2;
+  lastY = (touch.pageY - this.offsetTop - extraOffsetY) * 2;
   e.preventDefault();
 })
 
@@ -52,8 +52,8 @@ canvas.addEventListener("touchend", function(e){
 canvas.addEventListener("touchmove", function(e) {
   touch = e.touches[0]
   if (painting) {
-    mouseX = touch.pageX - this.offsetLeft - extraOffsetX;
-    mouseY = touch.pageY - this.offsetTop - extraOffsetY;
+    mouseX = (touch.pageX - this.offsetLeft - extraOffsetX) * 2;
+    mouseY = (touch.pageY - this.offsetTop - extraOffsetY) * 2;
 
     // find all points between
     var x1 = mouseX,
