@@ -8,6 +8,8 @@ header {
 
   z-index: 100000;
 
+
+
   .page-link {
     color: $color-white;
     display: inline-block;
@@ -32,6 +34,12 @@ header {
 
   nav {
     float: right;
+  }
+
+
+  .site-title {
+    padding-left: $grid-unit - 6px;
+    padding-top: $grid-unit;
   }
 
 }
