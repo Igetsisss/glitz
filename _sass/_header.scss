@@ -27,7 +27,7 @@ header {
 
     &.is-selected .page-link-word {
 
-      padding-bottom: $grid-unit;
+      padding-bottom: $grid-unit - 8px;
       border-bottom: 6px solid $color-white;
     }
   }
