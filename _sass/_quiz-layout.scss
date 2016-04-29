@@ -66,4 +66,10 @@
 
     }
   }
+
+  #canvas {
+    position: absolute;
+    top: 0;
+    left: 8 * $grid-unit;
+  }
 }
