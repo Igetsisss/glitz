@@ -1,7 +1,20 @@
+.feedback-toast-container {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right: 0;
+
+  height: 9 * $grid-unit;
+
+  pointer-events: none;
+
+  overflow:hidden;
+}
+
 .feedback-toast {
   background-color: $color-black-1;
   position: absolute;
-  bottom: 0;
+  bottom: -9 * $grid-unit;
   left: 0;
   right: 0;
   color: $color-white;
@@ -9,6 +22,12 @@
 
   padding: $grid-unit;
   padding-bottom: 2 * $grid-unit;
+
+  pointer-events:all;
+
+  &.is-shown {
+    bottom: 0;
+  }
 
   .feedback-light {
     width: 2 * $grid-unit;
@@ -24,14 +43,20 @@
 
     margin-right: $grid-unit;
 
+    background-color: $color-gray-2
+  }
 
-    &.correct {
+  &.feedback-toast-correct {
+    .feedback-light {
       background-color: $color-good;
       &:after {
         content: "✓"
       }
     }
-    &.incorrect {
+  }
+
+  &.feedback-toast-incorrect {
+    .feedback-light {
       background-color: $color-bad;
       &:after {
         content: "!"

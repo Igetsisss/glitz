@@ -74,4 +74,22 @@
     width: 740px;
     height: 513px;
   }
+
+
+  .button-container {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 6 * $grid-unit;
+    padding: 1 * $grid-unit;
+
+    .submit-button {
+      background-color: $color-black-1;
+      color: white;
+      text-align: center;
+      padding: $grid-unit/2 0;
+      border-radius: 5px;
+    }
+  }
 }
