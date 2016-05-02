@@ -32,7 +32,16 @@ title: Home
 {% endfor %}
 </div>
 
-<div class="packages-filter">Playbook Learning</div>
+<div class="packages-filter">
+
+  <div class="packages-filter-title">Playbook Learning</div>
+
+  <div class="packages-filter-container">
+    <div class="packages-filter-item">PROGRESS</div>
+    <div class="packages-filter-item is-selected">MASTERY</div>
+    <div class="packages-filter-item">INSTALLED</div>
+  </div>
+</div>
 
 <div class="package-container">
 {% for play in site.data.playbook %}
