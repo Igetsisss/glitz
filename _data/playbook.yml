@@ -1,106 +1,51 @@
-- name: Base Formations
-  summary: The most common formations we will run plays out of this season. The foundations of our offense.
+- name: High/Low Concepts
+  summary: A pass concept featuring four receivers with varying deep and short routes. Players routes will cross.
   locked: false
   completion: 8
   updated: Last updated 11/23
 
-- name: Duo Right
-  summary: Pass - A two back or one back 6-Man protection. Offensive line has four down and will. The remaining back has a “Dual” read from Mike to Sam.
+- name: Quick Pass Game
+  summary: A pass concept featuring three or more receivers with the ball to be thrown within three seconds of the snap. Most routes will be in and crossing routes, with deep routes reacting to a man press.
   completion: 6
   updated: Last updated 11/23
 
-- name: Tiger Left
-  summary: Run - Run plays that attack only the A and B gaps on either the left or right side of the field.
+- name: Three Step Drop
+  summary: The quickest passing concept within our passing game. The ball will be thrown within two seconds of the snap. All routes will break quickly.
   locked: false
   completion: 2
   updated: Last updated 11/23
 
-- name: Turn
-  summary: Pass - This is a 6-Man play action protection that allows the FB to free release to routes, the remaining back will block the first man.
+- name: Counters/Traps
+  summary: These plays take advantage of an aggressive defensive front. These plays will be called when the defense is likely to blitz.
   locked: false
   completion: 1
   updated: Last updated 11/23
 
+- name: Outside Runs
+  summary: Run concepts that target the C or D gaps. Offensive line will often pull, leaving their opposing linemen to block the backs.
+  completion: 0
+  updated: Last updated 11/23
+
+- name: Inside Runs
+  summary: A traditional run concept targeting the A and B gaps. Protection is often more typical with linemen blocking opposing linemen.
+  locked: false
+  completion: 0
+  updated: Last updated 11/23
+
+- name: Turn
+  summary: Pass - This is a 6-Man play action protection that allows the FB to free release to routes, the remaining back will block the first man.
+  locked: true
+  completion: 0
+  updated: Last updated 11/23
+
 - name: Counters/Traps
   summary: Run - These plays take advantage of an aggressive defensive front.
-  locked: false
+  locked: true
   completion: 0
   updated: Last updated 11/23
 
 - name: Quick Runs
   summary: A two back or one back 6-Man protection. The offensive line will block TURN protection. The remaining back will block the first man.
-  locked: false
-  completion: 0
-  updated: Last updated 11/23
-
-- name: Barrel
-  summary: Lorem ipsum explanation of progression of this package and what is explained in detail.
-  locked: true
-  completion: 0
-  updated: Last updated 11/23
-
-- name: Shotgun
-  summary: Lorem ipsum explanation of progression of this package and what is explained in detail.
-  locked: true
-  completion: 0
-  updated: Last updated 11/23
-
-- name: Alex
-  summary: Lorem ipsum explanation of progression of this package and what is explained in detail.
-  locked: true
-  completion: 0
-  updated: Last updated 11/23
-
-- name: Barrel
-  summary: Lorem ipsum explanation of progression of this package and what is explained in detail.
-  locked: true
-  completion: 0
-  updated: Last updated 11/23
-
-- name: Shotgun
-  summary: Lorem ipsum explanation of progression of this package and what is explained in detail.
-  locked: true
-  completion: 0
-  updated: Last updated 11/23
-
-- name: Alex
-  summary: Lorem ipsum explanation of progression of this package and what is explained in detail.
-  locked: true
-  completion: 0
-  updated: Last updated 11/23
-
-- name: Barrel
-  summary: Lorem ipsum explanation of progression of this package and what is explained in detail.
-  locked: true
-  completion: 0
-  updated: Last updated 11/23
-
-- name: Shotgun
-  summary: Lorem ipsum explanation of progression of this package and what is explained in detail.
-  locked: true
-  completion: 0
-  updated: Last updated 11/23
-
-- name: Alex
-  summary: Lorem ipsum explanation of progression of this package and what is explained in detail.
-  locked: true
-  completion: 0
-  updated: Last updated 11/23
-
-- name: Barrel
-  summary: Lorem ipsum explanation of progression of this package and what is explained in detail.
-  locked: true
-  completion: 0
-  updated: Last updated 11/23
-
-- name: Shotgun
-  summary: Lorem ipsum explanation of progression of this package and what is explained in detail.
-  locked: true
-  completion: 0
-  updated: Last updated 11/23
-
-- name: Alex
-  summary: Lorem ipsum explanation of progression of this package and what is explained in detail.
   locked: true
   completion: 0
   updated: Last updated 11/23
