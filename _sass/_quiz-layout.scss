@@ -48,15 +48,15 @@
       }
 
       .player {
-        background-color: $color-good;
+        background: radial-gradient($color-good 40%, rgba(0,0,0,0) 40%);
+
         border-radius: 1000000px;
 
         font-weight: $base-title-font-weight;
         color: $color-white;
 
-        width: 2 * $grid-unit;
-        height: 2 * $grid-unit;
-        margin: 1 * $grid-unit;
+        width: 4 * $grid-unit;
+        height: 4 * $grid-unit;
 
         display: flex;
         align-items: center;
