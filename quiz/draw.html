@@ -20,10 +20,44 @@ title: Draw
       <canvas width="740" height="513" id="canvas"></canvas>
     </div>
   </div>
+
+  <div class="button-container">
+    <div class='submit-button'>done</div>
+  </div>
 </div>
 
 
+<div class="feedback-toast-container">
+
+  <div class="feedback-toast feedback-toast-incorrect">
+    <div>
+      <div class="feedback-light">
+      </div>
+      <div class="feedback-title">Incorrect</div>
+    </div>
+    <div class="answer-info">The defense is in cover 3 cloud</div>
+    <a href="{{site.baseurl}}/quiz/draw.html"class="answer-next-button">Next</a>
+  </div>
+
+  <div class="feedback-toast feedback-toast-correct">
+    <div>
+      <div class="feedback-light">
+      </div>
+      <div class="feedback-title">Correct!</div>
+    </div>
+    <div class="answer-info">The defense is in cover 3 cloud</div>
+    <a href="{{site.baseurl}}/quiz/draw.html"class="answer-next-button">Next</a>
+  </div>
+</div>
+
 <script>
+
+  $(document).ready(function() {
+    $(".submit-button").on("tap click", function() {
+      $(".feedback-toast-correct").addClass("is-shown")
+    })
+  })
+
 
 var canvas = document.getElementById("canvas"),
   ctx = canvas.getContext("2d"),
