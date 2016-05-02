@@ -21,7 +21,7 @@
   completion: 1
   updated: Last updated 11/23
 
-- name: Counters/Trops
+- name: Counters/Traps
   summary: Run - These plays take advantage of an aggressive defensive front.
   locked: false
   completion: 0
