@@ -17,7 +17,7 @@ title: Drag and Drop
   <div class="question-content">
 
     <div class="question-image">
-      <img src="{{ site.baseurl }}/quiz/drag-drop.png">
+      <img src="{{ site.baseurl }}/img/drag-drop.png">
       <div class="players-drawer">
         <div class="player">QB</div>
         <div class="player">X</div>
@@ -61,10 +61,7 @@ title: Drag and Drop
 
 <script>
 $(document).ready(function() {
-  console.log($(".submit-button"));
-
   $(".submit-button").on("tap click", function() {
-    console.log($(".feedback-toast-correct"));
     $(".feedback-toast-correct").addClass("is-shown")
   })
 

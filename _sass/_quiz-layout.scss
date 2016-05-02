@@ -35,6 +35,10 @@
       left: 0;
       right: 0;
 
+      &.animated-image {
+        bottom: -48px;
+      }
+
       img {
         display: inline-block;
       }
@@ -46,6 +50,21 @@
         background-color: $color-gray-2;
         width: 4 * $grid-unit;
         padding: $grid-unit 0;
+      }
+
+
+
+      .replay-button {
+        position: absolute;
+        top: 0;
+        left: 2 * $grid-unit;
+        background-color: $color-gray-2;
+        width: 4 * $grid-unit;
+        padding: $grid-unit 0;
+
+        &:after {
+          content: "replay"
+        }
       }
 
       .player {
