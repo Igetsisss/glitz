@@ -107,7 +107,11 @@
     margin-top: 38 * $grid-unit;
     height: 41 * $grid-unit;
 
-    //background-color: transparentize($color-black-2, 0.3);
+    transition: background-color 0.5s ease;
+
+    &.is-open {
+      background-color: transparentize($color-black-2, 0.25);
+    }
   }
 
 }

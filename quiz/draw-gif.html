@@ -54,6 +54,11 @@ $(document).ready(function() {
     $(".animated-gif").attr('src', "{{site.baseurl}}/img/play-animated-once.gif")
   })
 
+  $(".feedback-toast-container").on("scroll", function() {
+    console.log("hello");
+    $(".feedback-toast").addClass("is-open")
+  })
+
   $(".submit-button").on("tap click", function() {
     $(".feedback-toast-container").addClass("is-shown")
   })
