@@ -6,7 +6,7 @@ title: Draw
 <div class="question-wrapper">
   <div class="question-header">
     <div class="question-title">
-      Draw your route in Duo RT Rip/Rod
+      Draw your route in Duo Right Red
     </div>
     <div class="question-prompt">
       Trace the route
@@ -36,13 +36,7 @@ title: Draw
 <div class="feedback-toast-container feedback-toast-draw-gif">
 
   <div class="feedback-toast feedback-toast-incorrect">
-    <div>
-      <div class="feedback-light">
-      </div>
-      <div class="feedback-title">Incorrect</div>
-    </div>
-    <div class="answer-info">The defense is in cover 3 cloud</div>
-    <a href="{{site.baseurl}}/quiz/draw.html"class="answer-next-button">Next</a>
+    <img src="{{site.baseurl}}/img/incorrect-question-overlay.png" class="feedback-toast-overlay">
   </div>
 </div>
 
@@ -61,6 +55,7 @@ $(document).ready(function() {
 
   $(".submit-button").on("tap click", function() {
     $(".feedback-toast-container").addClass("is-shown")
+    $(".submit-button").hide()
   })
 })
 
