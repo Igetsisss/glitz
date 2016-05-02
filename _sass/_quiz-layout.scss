@@ -110,4 +110,38 @@
       border-radius: 5px;
     }
   }
+
+  .question-choices {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 40 * $grid-unit;
+    margin: auto;
+
+    height: 34 * $grid-unit;
+
+    justify-content: center;
+    align-content: center;
+
+  }
+
+  .choice {
+    width: 16 * $grid-unit;
+    height: 10 * $grid-unit;
+    background-color: $color-gray-1;
+    margin: 1 * $grid-unit;
+
+    font-weight: $base-title-font-weight;
+    font-size: $base-title-small;
+    color: $color-gray-4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &.is-selected {
+      background-color: $color-black-1;
+      color: $color-white;
+    }
+  }
 }
