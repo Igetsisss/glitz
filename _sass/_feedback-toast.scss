@@ -90,3 +90,24 @@
     }
   }
 }
+
+.feedback-toast-draw-gif {
+  top: 0;
+  height: 100%;
+  pointer-events: all;
+  display: none;
+  overflow: scroll;
+
+  &.is-shown {
+    display: block;
+  }
+
+  .feedback-toast {
+    position: static;
+    margin-top: 38 * $grid-unit;
+    height: 41 * $grid-unit;
+
+    //background-color: transparentize($color-black-2, 0.3);
+  }
+
+}
