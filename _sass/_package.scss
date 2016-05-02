@@ -168,6 +168,12 @@
 
         padding: 2 * $grid-unit 3 * $grid-unit;
 
+        img {
+          position: absolute;
+          top: -184px;
+          left: 316px;
+        }
+
         .package-details-meta {
           border-right: 1px solid $color-gray-4;
           width: 19 * $grid-unit;
