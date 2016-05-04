@@ -1,0 +1,58 @@
+---
+layout: quiz-layout
+title: Multiple Choice
+---
+
+<div class="question-wrapper">
+  <div class="question-header">
+    <div class="question-title">
+      What is your basic running responsibility on Analog?
+    </div>
+    <div class="question-prompt">
+      Tap on the correct answer
+    </div>
+  </div>
+
+
+  <div class="question-content">
+
+    <div class="question-choices">
+      <div class="choice">
+        CaT
+      </div>
+      <div class="choice">
+        BoA
+      </div>
+      <div class="choice">
+        Shadow the Back
+      </div>
+      <div class="choice">
+        PCC
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="feedback-toast-container">
+
+  <div class="feedback-toast feedback-toast-correct">
+    <div>
+      <div class="feedback-light">
+      </div>
+      <div class="feedback-title">Correct!</div>
+    </div>
+    <div class="answer-info"></div>
+    <a href="{{site.baseurl}}/quiz/drag-drop.html"class="answer-next-button">Next</a>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+  $(".choice").on("tap click", function() {
+    $(".feedback-toast-correct").addClass("is-shown")
+    $(this).addClass("is-selected")
+  })
+})
+</script>

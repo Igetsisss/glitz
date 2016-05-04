@@ -53,10 +53,10 @@
       .replay-button {
         position: absolute;
         top: 0;
-        left: 2 * $grid-unit;
+        left: 1 * $grid-unit;
         background-color: $color-gray-2;
-        width: 4 * $grid-unit;
-        padding: $grid-unit 0;
+        width: 6 * $grid-unit;
+        padding: 2 * $grid-unit 0;
 
         &:after {
           content: "Replay"
@@ -80,6 +80,20 @@
         align-items: center;
         justify-content: center;
 
+        &.defense {
+          background: transparent;
+          color: red;
+
+          font-size: $base-title-small;
+
+          &.underline {
+            text-decoration: underline;
+          }
+
+          &.is-temporary {
+            color: $color-gray-2;
+          }
+        }
       }
 
     }
@@ -125,6 +139,8 @@
 
   }
 
+
+
   .choice {
     width: 16 * $grid-unit;
     height: 10 * $grid-unit;
@@ -142,6 +158,37 @@
     &.is-selected {
       background-color: $color-black-1;
       color: $color-white;
+    }
+  }
+
+  .question-choices-sidebar {
+    position: absolute;
+    right: 0 * $grid-unit;
+    width: 8 * $grid-unit;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    margin-top: -24px;
+
+    & .choice {
+      font-size: $base-text;
+
+      font-weight: $base-text-font-weight;
+
+      height: 6 * $grid-unit;
+
+      color: $color-black-1;
+
+      margin: 0.5 * $grid-unit $grid-unit;
+
+      background-color: $color-gray-2;
+
+      &.is-selected {
+        color: $color-white;
+
+        background-color: $color-black-1;
+      }
+
     }
   }
 }

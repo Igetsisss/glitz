@@ -1,0 +1,58 @@
+---
+layout: quiz-layout
+title: Multiple Choice
+---
+
+<div class="question-wrapper">
+  <div class="question-header">
+    <div class="question-title">
+      What is the play call for 8 Base Jolt?
+    </div>
+    <div class="question-prompt">
+      Tap on the correct answer
+    </div>
+  </div>
+
+
+  <div class="question-content">
+
+    <div class="question-choices">
+      <div class="choice">
+        Analog
+      </div>
+      <div class="choice">
+        Soy
+      </div>
+      <div class="choice">
+        Kennel
+      </div>
+      <div class="choice">
+        Havoc
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="feedback-toast-container">
+
+  <div class="feedback-toast feedback-toast-correct">
+    <div>
+      <div class="feedback-light">
+      </div>
+      <div class="feedback-title">Correct!</div>
+    </div>
+    <div class="answer-info">The play call is analog.</div>
+    <a href="{{site.baseurl}}/quiz/defense-drag-drop.html"class="answer-next-button">Next</a>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+  $(".choice").on("tap click", function() {
+    $(".feedback-toast-correct").addClass("is-shown")
+    $(this).addClass("is-selected")
+  })
+})
+</script>

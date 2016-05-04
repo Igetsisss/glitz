@@ -1,0 +1,68 @@
+---
+layout: quiz-layout
+title: Drag and Drop
+---
+
+<div class="question-wrapper">
+  <div class="question-header">
+    <div class="question-title">
+      What's your alignment on Analog?
+    </div>
+    <div class="question-prompt">
+      Drag and drop your player to its position in the formation
+    </div>
+  </div>
+
+
+  <div class="question-content">
+
+    <div class="question-image">
+      <img src="{{ site.baseurl }}/img/defense-drag-drop-1.png" width="740">
+      <div class="players-drawer">
+        <div class="player defense">B</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="button-container">
+    <div class='submit-button'>Done</div>
+  </div>
+</div>
+
+
+<div class="feedback-toast-container">
+
+  <div class="feedback-toast feedback-toast-incorrect">
+    <div>
+      <div class="feedback-light">
+      </div>
+      <div class="feedback-title">Incorrect</div>
+    </div>
+    <div class="answer-info">The defense is in cover 3 cloud</div>
+    <a href="{{site.baseurl}}/quiz/draw.html"class="answer-next-button">Next</a>
+  </div>
+
+  <div class="feedback-toast feedback-toast-correct">
+    <div>
+      <div class="feedback-light">
+      </div>
+      <div class="feedback-title">Correct!</div>
+    </div>
+    <div class="answer-info">The technique on base is 30 BoA. B gap if the ball is run towards, and A gap if the ball is run away.</div>
+    <a href="{{site.baseurl}}/quiz/defense-multi-choice-2.html"class="answer-next-button">Next</a>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+  $(".submit-button").on("tap click", function() {
+    $(".feedback-toast-correct").addClass("is-shown")
+    $(".question-image img").attr("src", "{{site.baseurl}}/img/defense-drag-drop-2.png")
+
+    $(".player").addClass("is-temporary")
+  })
+
+  $(".player").draggable();
+})
+</script>
