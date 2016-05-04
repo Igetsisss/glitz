@@ -2,8 +2,22 @@
   complete: false
   days_left: Two days left
   due_date: By Tuesday (11/12) at 10pm
+  quiz_url: /quiz/multi-choice.html
 
 - name: New Plays 2016
   complete: true
   days_left: Two days left
   due_date: By Tuesday (11/12) at 10pm
+  quiz_url: /quiz/multi-choice.html
+
+- name: Offense Quiz Demo
+  complete: true
+  days_left: Two days left
+  due_date: By Tuesday (11/12) at 10pm
+  quiz_url: /quiz/multi-choice.html
+
+- name: Defense Quiz Demo
+  complete: true
+  days_left: Two days left
+  due_date: By Tuesday (11/12) at 10pm
+  quiz_url: /quiz/multi-choice.html
