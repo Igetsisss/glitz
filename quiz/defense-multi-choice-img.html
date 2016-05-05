@@ -1,0 +1,88 @@
+---
+layout: quiz-layout
+title: Drag and Drop
+---
+
+<div class="question-wrapper">
+  <div class="question-header">
+    <div class="question-title">
+      What gap are you responsible for on Analog?
+    </div>
+    <div class="question-prompt">
+    </div>
+  </div>
+
+
+  <div class="question-content">
+
+    <div class="question-image">
+      <img class="animated-gif" src="{{ site.baseurl }}/img/defense-multi-choice.gif" width="740">
+
+      <div class="replay-button">
+      </div>
+    </div>
+
+  </div>
+
+      <div class="question-choices question-choices-sidebar">
+        <div class="choice">
+          A Gap
+        </div>
+        <div class="choice">
+          B Gap
+        </div>
+        <div class="choice">
+          C Gap
+        </div>
+        <div class="choice">
+          D Gap
+        </div>
+      </div>
+</div>
+
+
+<div class="feedback-toast-container">
+
+  <div class="feedback-toast feedback-toast-incorrect">
+    <div>
+      <div class="feedback-light">
+      </div>
+      <div class="feedback-title">Incorrect</div>
+    </div>
+    <div class="answer-info">The defense is in cover 3 cloud</div>
+    <a href="{{site.baseurl}}/quiz/draw.html"class="answer-next-button">Next</a>
+  </div>
+
+  <div class="feedback-toast feedback-toast-correct">
+    <div>
+      <div class="feedback-light">
+      </div>
+      <div class="feedback-title">Correct!</div>
+    </div>
+    <div class="answer-info">The technique on base is 30 BoA. B gap if the ball is run towards, and A gap if the ball is run away.</div>
+    <a href="{{site.baseurl}}"class="answer-next-button">Next</a>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+  $(".submit-button").on("tap click", function() {
+    $(".feedback-toast-correct").addClass("is-shown")
+
+    $(".player").addClass("is-temporary")
+  })
+
+
+  $(".replay-button").on("tap click", function() {
+    $(".animated-gif").attr('src', "{{site.baseurl}}/img/defense-multi-choice.gif")
+  })
+
+
+  $(".choice").on("tap click", function() {
+    $(".feedback-toast-correct").addClass("is-shown")
+    $(this).addClass("is-selected")
+  })
+
+  $(".player").draggable();
+})
+</script>
