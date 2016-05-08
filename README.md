@@ -23,6 +23,6 @@ The prototype has only been tested on an iPad Air 2 running iOS 9.3, and on Chro
 
 ## Using the Prototype on an iPad
 
-1. Navigate to the hosted version of the prototype in Safari. For the foreseeable future, the current version of the prototype will be hosted at [tpoulos.github.io/blitz](//tpoulos.github.io/blitz)
+1. Navigate to the hosted version of the prototype in Safari. For the foreseeable future, the current version of the prototype will be hosted at [tpoulos.github.io/blitz](http://tpoulos.github.io/blitz)
 
 2. Save the prototype to the [iPad home screen](http://www.gottabemobile.com/2015/01/29/how-to-save-website-shortcuts-to-your-iphone-home-screen/).
